@@ -1,0 +1,372 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+
+@-webkit-keyframes woom-spin {
+    0% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+@keyframes woom-spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+.woom-switch-checkbox {
+    position: relative;
+}
+
+.woom-field-text input {
+    max-width: 130px;
+}
+
+.woom-switch-checkbox .switch {
+    border: 1px solid grey;
+    position: relative;
+    display: block;
+    width: 60px;
+    height: 25px;
+}
+
+.woom-button-flex.button {
+    display: flex;
+    align-items: center;
+}
+
+.woom-button-flex>span {
+    margin-left: 5px;
+}
+
+.woocommerce_page_chat #wpfooter {
+    display: none;
+}
+
+tbody.woom-table-body .woom-field-row .link {
+    padding: 4px 8px;
+}
+
+tbody.woom-table-body .woom-field-row .link:hover {
+    text-decoration: underline;
+}
+
+tr.woom-field-row input {
+    max-width: calc(100% - 24px);
+}
+
+
+.woom-fullwidth {
+    min-height: 100px;
+    max-height: 750px;
+    color: #000;
+    padding: 8px;
+    border: 1px solid #c3c4c7;
+    resize: both;
+    overflow: auto;
+}
+
+.woom-fullwidth p {
+    margin-top: 0px;
+}
+
+.woom-fullwidth p:last-child {
+    margin-bottom: 0px;
+}
+
+.woom-buttons-group .woom-button:not(:first-child) {
+    margin-left: 12px !important;
+}
+
+
+
+.woom-switch-checkbox .switch:before {
+    content: '';
+    display: block;
+    width: 23px;
+    height: 23px;
+    background-color: grey;
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    margin: auto;
+    transition-duration: 250ms;
+}
+
+.woom-switch-checkbox .switch,
+.woom-switch-checkbox .switch:before {
+    border-radius: 32px;
+
+}
+
+.woom-table-body select {
+    max-width: 150px;
+}
+
+.woom-switch-checkbox input[type="checkbox"]:not(:checked)+.switch:before {
+    left: 2px;
+}
+
+.woom-error-text.woom-warning-message {
+    color: red;
+}
+
+.woom-success-text.woom-warning-message {
+    color: green;
+}
+
+.woom-switch-checkbox input[type="checkbox"]:checked+.switch:before {
+    left: calc(100% - 25px);
+    background-color: #a46497;
+}
+
+.woom-switch-checkbox input[type="checkbox"] {
+    position: absolute;
+    top: 0px;
+    bottom: 0px;
+    opacity: 0;
+}
+
+.dashicons.rotate {
+    -webkit-animation: woom-spin 2s infinite linear;
+    animation: woom-spin 2s infinite linear;
+    margin-left: 4px;
+}
+
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+.list-block {
+    display: flex;
+    flex-direction: column;
+}
+
+.wcw-page-header .wcw-chat-header {
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.wcw-page-header .wcw-chat-header>sup {
+    padding: 2px 8px;
+    border-radius: 12px;
+    border: 1px solid;
+    margin-left: 8px;
+}
+
+.wcw-page-header {
+    /* background: #ebebec; */
+    background: #d3d3d6;
+    margin-bottom: 30px;
+    position: sticky;
+    top: 0px;
+    width: 100%;
+    z-index: 1;
+}
+
+.wcw-page-header.is-scrolled {
+    box-shadow: 0 8px 16px 0 rgba(85, 93, 102, .3);
+    -webkit-box-shadow: 0 8px 16px 0 rgba(85, 93, 102, .3);
+    -o-box-shadow: 0 8px 16px 0 rgba(85, 93, 102, .3);
+    -moz-box-shadow: 0 8px 16px 0 rgba(85, 93, 102, .3);
+}
+
+.wcw-page-header .wcw-page-header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 0px 16px;
+}
+
+.wcw-page-header-inner .header-right-menu {
+    display: flex;
+}
+
+.wcw-page-header-inner .menu-item:not(:last-child) {
+    margin-right: 8px;
+}
+
+.wcw-page-header-inner .menu-item>a {
+    color: #757575;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.wcw-page-header-inner .menu-item:hover>a {
+
+    color: #00000087;
+}
+
+.wcw-page-header-inner .menu-item>a,
+.wcw-page-header-inner .menu-item>a:focus,
+.wcw-page-header-inner .menu-item>a:hover {
+    border: none;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+    box-shadow: none;
+    -webkit-box-shadow: none;
+    -o-box-shadow: none;
+    -moz-box-shadow: none;
+}
+
+.wcw-page-header-inner .menu-item:hover {
+    background-color: #f0f0f0;
+    /* background-color: #000; */
+    box-shadow: none;
+}
+
+#woom-manual-trigger-actions .wcw-buttons {
+    margin-bottom: -8px;
+}
+
+#woom-manual-trigger-actions .wcw-buttons .btn {
+    margin-right: 8px;
+    margin-bottom: 8px;
+    display: inline-flex;
+    align-items: center;
+}
+
+.woom-field-actions a {
+    margin: 6px;
+    padding: 6px;
+}
+
+.woom-field-checkbox,
+.woom-switch-checkbox {
+    width: 24px;
+}
+
+/**
+popup styles starts here..
+**/
+.woom-popup-window {
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    background: #0000008f;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    z-index: 99999;
+}
+
+.woom-popup-window table.wc_emails.wc_emails td {
+    vertical-align: baseline;
+}
+
+.woom-popup-window .woom-popup-panel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+    margin: auto;
+    border-radius: 12px;
+    overflow: hidden;
+    position: absolute;
+    left: 10%;
+    right: 0px;
+    top: 0px;
+    bottom: 0px;
+    min-width: 540px;
+    max-height: 90vh;
+    max-width: 80%;
+}
+
+.woom-popup-window .woom-popup-panel .woom-popup-content {
+    width: calc(100% - 48px);
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 24px;
+}
+
+.woom-popup-header,
+.woom-popup-footer {
+    position: relative;
+    width: calc(100% - 24px);
+    text-align: center;
+}
+
+.woom-popup-dismiss {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    margin: 12px;
+    padding: 6px;
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+.woom-popup-dismiss:hover {
+    opacity: 1;
+}
+
+/**
+popup styles ends here..
+**/
+
+@media only screen and (min-width: 641px) {
+    .woom-input-number {
+        max-width: 75px;
+    }
+
+    .woom-checkbox {
+        margin: 20% auto !important;
+    }
+
+    .inline-nospace-fields label {
+        margin-bottom: 5px;
+    }
+
+    .inline-nospace-fields label:first-letter {
+        text-transform: uppercase;
+    }
+
+    .inline-nospace-fields {
+        display: flex !important;
+        align-items: baseline;
+    }
+
+    .inline-nospace-fields>div {
+        margin-right: 10px;
+    }
+
+    .woocommerce_page_chat .is-dismissible {
+        display: none;
+    }
+
+    .inline-nospace-fields input,
+    .inline-nospace-fields select {
+        border-radius: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 640px) {
+
+    .inline-nospace-fields input,
+    .inline-nospace-fields select {
+        margin-bottom: 20px !important;
+    }
+
+}
